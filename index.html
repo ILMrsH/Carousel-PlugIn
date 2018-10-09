@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>轮播</title>
+    <link rel="stylesheet" href="css/zy_slide.css">
+</head>
+
+<body>
+    <!-- 外部轮播大箱子 -->
+    <div class="zySlide">
+        <span class="zy_prev">前一张</span>
+        <ul>
+            <li>
+                <img src="images/1.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/2.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/3.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/4.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/5.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/6.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/7.jpg" alt="">
+            </li>
+        </ul>
+        <span class="zy_next">后一张</span>
+    </div>
+    <div class="zySlide">
+        <span class="zy_prev">前一张</span>
+        <ul>
+            <li>
+                <img src="images/1.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/2.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/3.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/4.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/5.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/6.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/7.jpg" alt="">
+            </li>
+        </ul>
+        <span class="zy_next">后一张</span>
+    </div>
+    <div class="zySlide">
+        <span class="zy_prev">前一张</span>
+        <ul>
+            <li>
+                <img src="images/1.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/2.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/3.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/4.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/5.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/6.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/7.jpg" alt="">
+            </li>
+        </ul>
+        <span class="zy_next">后一张</span>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/zy_slide.js"></script>
+    <script>
+        jQuery.noConflict();
+        jQuery(".zySlide").eq(0).zySliding();
+        jQuery(".zySlide").eq(1).zySliding({
+            speed: 3000,
+            duration: 2000,
+            auto:false
+        });
+        jQuery(".zySlide").eq(2).zySliding({
+            speed: 4000,
+            duration: 3000
+        });
+    </script>
+    
+
+
+
+</body>
+
+</html>
